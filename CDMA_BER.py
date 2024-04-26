@@ -40,33 +40,6 @@ print("Data bit that was sent",data)
 # In[2]:
 
 
-# There are several types of wireless communication channels, and two common examples a
-# (AWGN) channel and the Rayleigh fading channel.
-# AWGN channel: In this type of channel, the received signal is corrupted by additive w
- # which is a type of random noise that is characterized by its mean and variance.
- # The AWGN channel is often used to model wireless communication channels
- # where the signal experiences random noise due to factors such as atmospheric inte
- # electronic noise, and thermal noise.
-# Rayleigh fading channel: In this type of channel, the signal experiences random varia
-# due to multiple signal paths between the transmitter and receiver.
-# This effect is known as multipath fading, and it can result in signal distortion and
-# The Rayleigh fading channel is commonly used to model wireless communication channels
-# in urban or indoor environments where there are many obstructions that cause signal r
-# Other types of wireless communication channels include:
-# Rician fading channel: This is a variation of the Rayleigh fading channel that includ
-# a dominant line-of-sight path in addition to the scattered paths.
-# Nakagami-m fading channel: This is a generalization of the Rayleigh fading channel th
-# a parameter m that determines the severity of the fading.
-# Flat fading channel: In this type of channel, the signal experiences a constant atten
-# over the entire bandwidth of the signal.
-# Frequency selective fading channel: In this type of channel,
-# different frequency components of the signal experience different levels of attenuati
-# resulting in distortion of the signal waveform.
-# The Bit Error Rate (BER) performance over a Rayleigh fading channel
-# with Binary Phase Shift Keying (BPSK) transmission can be analyzed using the followin
-# BER = 0.5 * erfc(np.sqrt(10 ** (Eb_N0_dB / 10)))
-# where erfc is the complementary error function and SNR is the Signal-to-Noise Ratio.
-# To simulate the BER performance over a range of SNR values from 0 to 60 dB, we can us
 import numpy as np
 from scipy.special import erfc
 import matplotlib.pyplot as plt
